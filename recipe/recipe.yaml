@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 0
+  number: 1
   python:
     entry_points:
       - bibtex-update = bibtex_updater.cli.updater_cli:main
@@ -48,7 +48,7 @@ tests:
       python_version: ${{ python_min }}.*
 
 about:
-  homepage: https://github.com/DataAnalyticsEngineering/UNOCG
+  homepage: https://github.com/rpatrik96/bibtexupdater
   summary: Replace preprint BibTeX entries with published versions and validate bibliography references.
   description: |
     Tools for managing BibTeX bibliographies: automatically update preprints to published versions, validate references against external databases, and filter to only cited references.
