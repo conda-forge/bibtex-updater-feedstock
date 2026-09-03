@@ -1,5 +1,5 @@
 context:
-  version: "1.7.0"
+  version: "1.10.0"
 
 package:
   name: bibtex-updater
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/b/bibtex_updater/bibtex_updater-${{ version }}.tar.gz
-  sha256: 045a1a57f10293261674932a73f55569e025f7bd868ad152dc8bcda1a10f9663
+  sha256: 3ccddd446586bf34ba10cb4f39e1104a13d650c0e7005ada556329e651b85954
 
 build:
   noarch: python
