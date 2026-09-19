@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 0
+  number: 1
   python:
     entry_points:
       - bibtex-update = bibtex_updater.cli.updater_cli:main
@@ -30,7 +30,7 @@ requirements:
     - hatch-vcs
   run:
     - python >=${{ python_min }}
-    - bibtexparser >=1.4.0
+    - bibtexparser >=1.4.0, <2.0  # https://github.com/rpatrik96/bibtexupdater/issues/81
     - crossref_commons_py >=0.0.7
     - httpx >=0.24.0
     - rapidfuzz >=3.0.0
